@@ -1,8 +1,9 @@
-This is a group project for the course- Bioinformatics of RNA and non-coding world
+This is a group project for the course- Bioinformatics of RNA and non-coding world.
 
 The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics: RMSD, MCQ and TM-Score.
+The question to answer is : **Which coarse-grained representation has the highest correlation to current metrics?**
 
-This repository contains Python scripts and resources for calculating coarse-grained root mean square deviation (CG-RMSD) and analyzing its correlation with structural metrics (RMSD, MCQ, TM-score). The project emphasizes clean code, structured workflows, and a detailed analysis pipeline.
+This repository contains Python scripts and resources for calculating coarse-grained root mean square deviation (CG-RMSD or RSSD) and analyzing its correlation with structural metrics (RMSD, MCQ, TM-score). The project emphasizes clean code, structured workflows, and a detailed analysis pipeline.
 
 ---
 
