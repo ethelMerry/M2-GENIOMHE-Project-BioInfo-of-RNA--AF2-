@@ -1,5 +1,10 @@
 This is a group project for the course- Bioinformatics of RNA and non-coding world.
 
+Member of the team : 
+[Stephaniefouteau](https://github.com/stephaniefouteau)
+[13Aigrie](https://github.com/13Aigrie)
+[Ethelmerry](https://github.com/skyethel)
+
 The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics: RMSD, MCQ and TM-Score.
 The question to answer is : **Which coarse-grained representation has the highest correlation to current metrics?**
 
@@ -23,9 +28,10 @@ This repository contains Python scripts and resources for calculating coarse-gra
 ## Overview
 
 This project automates the process of evaluating predicted molecular structures against native structures. The key functionalities include:
-1. **Computing CG-RMSD  for predicted and native structures**: Measure the structural deviation of predicted structures from the native structure.
-2. **Merging Results with Metrics (RMSD, MCQ, TM-score)**: Combine CG-RMSD values with additional metrics (RMSD, MCQ, TM-score).
-3. **Correlation Analysis**: Determine the relationships between CG-RMSD and the metrics using Pearson and Spearman correlations and generating scatter plots for visualization..
+1. **Cleaning datas*** : cleaning primary datas by standardizes CSV files : renaming the first column to “Model” and removing the “normalized_” prefix from its entries
+2. **Computing CG-RMSD  for predicted and native structures**: Measure the structural deviation of predicted structures from the native structure.
+3. **Merging Results with Metrics (RMSD, MCQ, TM-score)**: Combine CG-RMSD values with additional metrics (RMSD, MCQ, TM-score).
+4. **Correlation Analysis**: Determine the relationships between CG-RMSD and the metrics using Pearson and Spearman correlations and generating scatter plots for visualization..
 
 ---
 
@@ -43,6 +49,7 @@ This project automates the process of evaluating predicted molecular structures 
 
 ### 2. **Modular Structure**
 - **Separation of Concerns**: Each script is designed for a specific task:
+  - `clean.py`: Clean scores files
   - `compute_rssd.py`: Handles CG-RMSD computation.
   - `merge.py`: Merges CG-RMSD results with external metrics.
   - `compute_corr.py`: Computes correlations and visualizes results.
@@ -76,7 +83,22 @@ The repository is logically structured:
 
 ### Scripts
 
-#### 1. **`compute_rssd.py`**
+#### 1. clean.py 
+This script processes and cleans primary data files for downstream analysis. It:
+- Renames the first column of `.csv` files to “Model” for consistency.
+- Removes the “normalized_” prefix from entries in the “Model” column to simplify identifiers.
+- Processes all CSV files in the specified directory, ensuring uniform formatting.
+- Saves the cleaned files to a specified output directory.
+
+#### Input:
+
+-Directory containing raw CSV files with structural data (e.g., `scores/`).
+
+#### Output:
+
+-Cleaned `.csv` files and saved them in the same output directory with standardized column names and identifiers.
+
+#### 2. **`compute_rssd.py`**
 
 This script calculates CG-RMSD for native and predicted structures. It:
 - Extracts atomic coordinates for a specific atom type (default: `"C5'"`).
@@ -95,7 +117,7 @@ This script calculates CG-RMSD for native and predicted structures. It:
 
 ---
 
-#### 2. **`merge.py`**
+#### 3. **`merge.py`**
 
 This script merges the CG-RMSD results with a metrics file containing RMSD, MCQ, and TM-score values. It:
 - Loads the CG-RMSD and metrics files.
@@ -111,7 +133,7 @@ This script merges the CG-RMSD results with a metrics file containing RMSD, MCQ,
 
 ---
 
-#### 3. **`compute_corr.py`**
+#### 4. **`compute_corr.py`**
 
 This script computes Pearson and Spearman correlations between CG-RMSD and metrics. It:
 - Computes correlations between CG-RMSD and RMSD, MCQ, TM-score.
