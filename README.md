@@ -29,10 +29,9 @@ This repository contains Python scripts and resources for calculating coarse-gra
 ## Overview
 
 This project automates the process of evaluating predicted molecular structures against native structures. The key functionalities include:
-1. **Cleaning datas*** : cleaning primary datas by standardizes CSV files : renaming the first column to “Model” and removing the “normalized_” prefix from its entries
-2. **Computing CG-RMSD  for predicted and native structures**: Measure the structural deviation of predicted structures from the native structure.
-3. **Merging Results with Metrics (RMSD, MCQ, TM-score)**: Combine CG-RMSD values with additional metrics (RMSD, MCQ, TM-score).
-4. **Correlation Analysis**: Determine the relationships between CG-RMSD and the metrics using Pearson and Spearman correlations and generating scatter plots for visualization..
+1. **Computing CG-RMSD  for predicted and native structures**: Measure the structural deviation of predicted structures from the native structure.
+2. **Merging Results with Metrics (RMSD, MCQ, TM-score)**: Combine CG-RMSD values with additional metrics (RMSD, MCQ, TM-score).
+3. **Correlation Analysis**: Determine the relationships between CG-RMSD and the metrics using Pearson and Spearman correlations and generating scatter plots for visualization..
 
 ---
 
