@@ -2,19 +2,22 @@
 
 import os
 import argparse
-import numpy as np
-from scipy.spatial.transform import Rotation as R
+# import numpy as np
+# from scipy.spatial.transform import Rotation as R
+import compute_rmsd
+import parse_pdb
 
 
+"""
 def parse_pdb(pdb_file, atom_names=None, all_atoms=False):
-    """
+    
     Parse a PDB file to extract atomic coordinates for specific atom types or all atoms.
 
     :param pdb_file: Path to the PDB file to parse.
     :param atom_names: List of atom names to extract coordinates for.
     :param all_atoms: Boolean, if True, extract coordinates for all atoms.
     :return: Numpy array containing the coordinates of the selected atoms.
-    """
+    
     atoms = []
     with open(pdb_file, 'r') as pdb:
         for line in pdb:
@@ -29,19 +32,20 @@ def parse_pdb(pdb_file, atom_names=None, all_atoms=False):
 
 
 def compute_rmsd(true_atoms, predicted_atoms):
-    """
+    
     Compute the root mean square deviation (RMSD) between native and predicted atoms.
 
     :param true_atoms: Numpy array of native structure atom coordinates.
     :param predicted_atoms: Numpy array of predicted structure atom coordinates.
     :return: RMSD value.
-    """
+    
     if true_atoms.shape != predicted_atoms.shape:
         raise ValueError(f"Shape mismatch: {true_atoms.shape} vs {predicted_atoms.shape}")
     rotation, rssd = R.align_vectors(true_atoms, predicted_atoms, return_sensitivity=False)
     rmsd = rssd/len(true_atoms)
     return rotation, rmsd
-
+"""
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Compute custom RMSD for one RNA and one Prediction')
     parser.add_argument('-native', required=True, help='Path to the native PDB file')
