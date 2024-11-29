@@ -2,49 +2,10 @@
 
 import os
 import argparse
-# import numpy as np
-# from scipy.spatial.transform import Rotation as R
-import compute_rmsd
-import parse_pdb
+from compute_rmsd import compute_rmsd
+import parse_pdb as ppdb
 
 
-"""
-def parse_pdb(pdb_file, atom_names=None, all_atoms=False):
-    
-    Parse a PDB file to extract atomic coordinates for specific atom types or all atoms.
-
-    :param pdb_file: Path to the PDB file to parse.
-    :param atom_names: List of atom names to extract coordinates for.
-    :param all_atoms: Boolean, if True, extract coordinates for all atoms.
-    :return: Numpy array containing the coordinates of the selected atoms.
-    
-    atoms = []
-    with open(pdb_file, 'r') as pdb:
-        for line in pdb:
-            if line.startswith("ATOM"):
-                current_atom = line[12:16].strip()
-                if all_atoms or (atom_names and current_atom in atom_names):
-                    x = float(line[30:38].strip())
-                    y = float(line[38:46].strip())
-                    z = float(line[46:54].strip())
-                    atoms.append([x, y, z])
-    return np.array(atoms)
-
-
-def compute_rmsd(true_atoms, predicted_atoms):
-    
-    Compute the root mean square deviation (RMSD) between native and predicted atoms.
-
-    :param true_atoms: Numpy array of native structure atom coordinates.
-    :param predicted_atoms: Numpy array of predicted structure atom coordinates.
-    :return: RMSD value.
-    
-    if true_atoms.shape != predicted_atoms.shape:
-        raise ValueError(f"Shape mismatch: {true_atoms.shape} vs {predicted_atoms.shape}")
-    rotation, rssd = R.align_vectors(true_atoms, predicted_atoms, return_sensitivity=False)
-    rmsd = rssd/len(true_atoms)
-    return rotation, rmsd
-"""
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Compute custom RMSD for one RNA and one Prediction')
@@ -69,10 +30,10 @@ if __name__ == "__main__":
     print(f"Processing custom RMSD for native structure {native_pdb} and predicted structure {predicted_pdb}")
 
     print("Parsing native PDB file...")
-    true_atoms = parse_pdb(native_pdb, atom_names, all_atoms)
+    true_atoms = ppdb.parse_pdb(native_pdb, atom_names, all_atoms)
 
     print("Parsing predicted PDB file...")
-    predicted_atoms = parse_pdb(predicted_pdb, atom_names, all_atoms)
+    predicted_atoms = ppdb.parse_pdb(predicted_pdb, atom_names, all_atoms)
 
     print("Computing custom MRSD...")
     rotation, rmsd = compute_rmsd(true_atoms, predicted_atoms)
