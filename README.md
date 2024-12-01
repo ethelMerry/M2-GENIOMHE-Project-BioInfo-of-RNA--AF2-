@@ -156,11 +156,11 @@ Follow the prompt :
 This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
 It:  
 	-    Parses native and predicted PDB files to extract atomic coordinates.  
-	-    Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.
- 	-    Skip predicted structures with different number of atoms compared to the native.
+	-    Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.  
+ 	-    Skip predicted structures with different number of atoms compared to the native.  
 	-    Computes normalized CG-RMSD values for selected atoms or all atoms.  
-	-    Saves results in a `.csv` file.  
-	-    Generates 3D scatter plots visualizing the alignment results.  
+	-    Saves results in a `.csv` file.    
+	-    Generates 3D scatter plots visualizing the alignment results.    
 
 Input:
 
