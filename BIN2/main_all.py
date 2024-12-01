@@ -7,8 +7,8 @@ def main():
     print("\nStep 1: Compute CG-RMSD and Generate Plots")
     native_folder = input("Enter the path to the native PDB folder: ")
     predicted_base_folder = input("Enter the path to the predicted PDB folder: ")
-    output_base_folder = input("Enter the path to the CG-RMSD output folder: ")
-    plots_base_folder = input("Enter the path to save CG-RMSD plots: ")
+    output_base_folder = input("Enter the path to the CG-RMSD output folder (create one): ")
+    plots_base_folder = input("Enter the path to save CG-RMSD plots (create one): ")
 
     # Atom selection for CG-RMSD computation
     atom_names_input = input("Enter atom names (comma-separated, e.g., 'C5',P' or 'all' for all atoms): ")
@@ -32,10 +32,10 @@ def main():
             process_pdb_folder(native_pdb, predicted_folder, output_file, plots_folder, atom_names, all_atoms)
 
     # Step 2: Merge CG-RMSD and Metrics
-    print("\nStep 2: Merge CG-RMSD and Metrics")
+    print("\nStep 2: Merge CG-RMSD and scores files")
     cgRMSD_folder = input("Enter the folder containing CG-RMSD output files: ")
-    metrics_folder = input("Enter the folder containing metrics files: ")
-    merged_folder = input("Enter the folder to save merged files: ")
+    metrics_folder = input("Enter the folder containing scores files: ")
+    merged_folder = input("Enter the folder to save merged files (create one): ")
 
     os.makedirs(merged_folder, exist_ok=True)
 
@@ -47,7 +47,7 @@ def main():
             merged_file = os.path.join(merged_folder, f"merged_{structure_id}.csv")
 
             if not os.path.exists(metrics_path):
-                print(f"Skipping {cgRMSD_file}: Metrics file {metrics_path} not found.")
+                print(f"Skipping {cgRMSD_file}: score file {metrics_path} not found.")
                 continue
 
             print(f"Merging: {cgRMSD_path} with {metrics_path}")
@@ -55,8 +55,8 @@ def main():
 
     # Step 3: Compute Correlations and Generate Plots
     print("\nStep 3: Compute Correlations and Generate Plots")
-    plots_base_folder = input("Enter the folder to save correlation plots: ")
-    corr_results_base_folder = input("Enter the folder to save correlation results: ")
+    plots_base_folder = input("Enter the folder to save correlation plots (create one): ")
+    corr_results_base_folder = input("Enter the folder to save correlation results (create one): ")
 
     os.makedirs(corr_results_base_folder, exist_ok=True)
     os.makedirs(plots_base_folder, exist_ok=True)
