@@ -231,7 +231,6 @@ Output:
 - **Corr Results**: Contains correlation results.
 - **Corr Plots**: Stores the plots.
 
-*************
 ---
 
 ## Correlation Analysis of C5' Data
@@ -269,6 +268,3 @@ The output files include:
 3. `C5'_correlation_scores.png`: Line plot of Pearson and Spearman scores.
 
 ## THANK YOU!
----
-
-
