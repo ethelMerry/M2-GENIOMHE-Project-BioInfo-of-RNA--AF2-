@@ -184,8 +184,8 @@ Input:
 
 Output:
 
-    - **Correlation Results**: A .txt file summarizing correlations for each metric (e.g., corr_results/corr_rp05.txt).  
-    - **Scatter Plots**: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (e.g., CORR_IMG_rp05/).
+    - Correlation Results: A .txt file summarizing correlations for each metric (e.g., corr_results/corr_rp05.txt).  
+    - Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (e.g., CORR_IMG_rp05/).
 
 
 
