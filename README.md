@@ -232,6 +232,7 @@ Output:
 - **Corr Plots**: Stores the plots.
 
 *************
+---
 
 ## Correlation Analysis of C5' Data
 
@@ -244,6 +245,7 @@ The script `corr_plot.py` performs the following steps:
 1. **Parse Correlation Data**: 
    - It reads multiple `.txt` files in the correlation results folder, each containing Pearson and Spearman correlation coefficients for RMSD, MCQ, and TM-score.
    - The extracted correlation data is saved in an Excel file (`cgRMSD_correlations_summary.xlsx`).
+---
 
 **Heatmap**:
 ![Correlation Heatmap](our_results/C5'_correlation_heatmap.png)
@@ -251,10 +253,13 @@ The script `corr_plot.py` performs the following steps:
 **Line Plot**:
 ![Correlation Scores Line Plot](our_results/C5'_correlation_scores.png)
 
+---
+
 ## Usage
 
 - Ensure Python 3, along with the required packages (`pandas`, `seaborn`, `matplotlib`), is installed.
 
+---
 
 ## Results
 
@@ -264,5 +269,6 @@ The output files include:
 3. `C5'_correlation_scores.png`: Line plot of Pearson and Spearman scores.
 
 ## THANK YOU!
+---
 
 
