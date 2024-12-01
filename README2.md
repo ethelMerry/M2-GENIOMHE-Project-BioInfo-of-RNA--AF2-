@@ -153,12 +153,12 @@ Input:
 Output:
 
 •	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).  
-•	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).  
+•	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
 
 ### Step 2: Merge CG-RMSD and Metrics
 
-merge_and_corr.py (merge_metrics_and_cgRMSD function)
+`merge_and_corr.py` (merge_metrics_and_cgRMSD function)
 
 This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). 
 It:  
@@ -168,17 +168,17 @@ It:
 
 Input:
 
-	•	CG-RMSD `.csv` File: Contains CG-RMSD values (`e.g., cg_rmsd_rp05.csv`).  
-	•	Metrics `.csv` File: Contains metrics like RMSD, MCQ, and TM-Score (`e.g., metrics_rp05.csv`).
+•	CG-RMSD `.csv` File: Contains CG-RMSD values (`e.g., cg_rmsd_rp05.csv`).  
+•	Metrics `.csv` File: Contains metrics like RMSD, MCQ, and TM-Score (`e.g., metrics_rp05.csv`).
 
 Output:
 
-	•	A merged `.csv` file combining CG-RMSD and metrics (`e.g., merged_rp05.csv)`.  
+•	A merged `.csv` file combining CG-RMSD and metrics (`e.g., merged_rp05.csv)`.  
 
 
 ### Step 3: Compute Correlations and Visualizations
 
-compute_corr.py
+`compute_corr.py`
 
 This script computes Pearson and Spearman correlations between CG-RMSD and other metrics.  
 It:    
@@ -188,25 +188,25 @@ It:
 
 Input:
 
-    •	Merged `.csv` files (`e.g., merged_rp05.csv`).
+•	Merged `.csv` files (`e.g., merged_rp05.csv`).
 
 Output:
 
-	•	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).    
- 	•	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (`e.g., CORR_IMG_rp05/`).
+•	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).    
+•	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (`e.g., CORR_IMG_rp05/`).
 
 
 
 ### Main Workflow: main_all.py
 
-The main_all.py script orchestrates the entire workflow:  
+The `main_all.py` script orchestrates the entire workflow:  
 
 	Step 1: Prompts the user to calculate CG-RMSD for native and predicted PDB files.  
 	Step 2: Merges CG-RMSD results with precomputed metrics.  
 	Step 3: Computes correlations and generates visualizations.  
 
 ### How to Run:
-python main_all.py
+`python main_all.py`
 
 Follow the prompt : 
 
