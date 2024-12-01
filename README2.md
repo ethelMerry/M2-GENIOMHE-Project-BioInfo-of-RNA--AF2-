@@ -22,7 +22,7 @@ This repository contains Python scripts and resources for calculating coarse-gra
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Usage](#Usage)
-  - [Step 1: Compute CG-RMSDpts](#step-1:-compute-cg-rmsd)
+  - [Step 1: Compute CG-RMSD](#step-1:-compute-cg-rmsd)
   - [Step 2: Merge CG-RMSD and Metrics](#step-2:-merge-cg-rmsd-and-metrics)
   - [Step 3: Compute Correlations and Visualizations](#step-3:-compute-correlations-and-visualizations)
 - [Project Structure](#project-structure)
@@ -51,7 +51,7 @@ This project automates the process of evaluating predicted molecular structures 
 
 
 
-## quality-of-the-code
+## Quality of the code
 
 ### documentation
 ### 1. **Code Readability**
