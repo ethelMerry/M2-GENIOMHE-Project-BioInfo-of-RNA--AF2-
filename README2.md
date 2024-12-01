@@ -138,22 +138,22 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 ### Step 1: Compute CG-RMSD
 
 This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
-It:
-	•	Parses native and predicted PDB files to extract atomic coordinates.
-	•	Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.
-	•	Computes normalized CG-RMSD values for selected atoms or all atoms.
-	•	Saves results in a `.csv` file.
-	•	Generates 3D scatter plots visualizing the alignment results.
+It: 
+	•	Parses native and predicted PDB files to extract atomic coordinates.  
+	•	Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.  
+	•	Computes normalized CG-RMSD values for selected atoms or all atoms.  
+	•	Saves results in a `.csv` file.  
+	•	Generates 3D scatter plots visualizing the alignment results.  
 
 Input:
 
-	•	Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).
-	•	Predicted PDB Folder: A directory containing predicted `.pdb` files (`e.g., predicted_rp05`).
+-    Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).
+-   Predicted PDB Folder: A directory containing predicted `.pdb` files (`e.g., predicted_rp05`).
 
 Output:
 
-	•	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).
-	•	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
+-    A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).
+-   A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
 
 ### Step 2: Merge CG-RMSD and Metrics
