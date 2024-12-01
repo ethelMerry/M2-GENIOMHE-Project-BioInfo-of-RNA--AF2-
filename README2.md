@@ -118,7 +118,7 @@ Dataset: https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/da
 ## Installation 
  - Clone the repository:
 `git clone https://github.com/ethelMerry/M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-.git`
-`cd RNA`
+\n`cd RNA`
 
 ## Usage 
 ### Step 1: Compute CG-RMSD
