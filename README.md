@@ -33,7 +33,7 @@ The goal of the project is to compute a custom coarse-grained RMSD and to compar
   - [Step 2: Merge CG-RMSD and scores](#step-2-merge-cg-rmsd-and-scores)
   - [Step 3: Compute Correlations and Visualizations](#step-3-compute-correlations-and-visualizations)
 - [Output Directories](#output-directories)
-- [Result Correation Analysis](#correation-analysis-of-cfive-data)
+- [Result Correlation Analysis](#correation-analysis-of-cfive-data)
   
 ---
 
@@ -161,7 +161,7 @@ Example 3DImage Output for C5' atom for one predicted structure (rp07):
 
 ![](our_results/3drna_rp07_1.png)
 
-### Step 2: Merge CG-RMSD and Metrics
+### Step 2: Merge CG-RMSD and Scores
 `merge_and_corr.py` (merge_metrics_and_cgRMSD function)
 
 This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). 
