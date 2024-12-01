@@ -1,22 +1,21 @@
 Welcome to the CG-RMSD Project repository! 
 
-This project provides Python scripts to compute the coarse-grained RMSD (CG-RMSD) between native and predicted PDB structures for specified atoms. The repository is designed to offer flexibility for users interested in bulk processing of data, as well as a targeted CG-RMSD computation for individual native-predicted pairs.
-Below is a detailed description of each script and how to use them effectively.
-
 This is a group project for the course Bioinformatics of RNA and non-coding world.
-
-The goal of this project is to answer **Which coarse-grained representation has the highest correlation to current metrics?**
+This repository provides Python scripts to compute the coarse-grained RMSD (CG-RMSD) between native and predicted PDB structures for specified atoms. The repository is designed to offer flexibility for users interested in bulk processing of data, as well as a targeted CG-RMSD computation for individual native-predicted pairs.  
+Below is a detailed description of each script and how to use them effectively.
 
 Member of the team : 
 [Stephaniefouteau](https://github.com/stephaniefouteau) - 
 [13Aigrie](https://github.com/13Aigrie) - 
 [Ethelmerry](https://github.com/skyethel)
 
-The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics:
+The question we want to answer is : **Which coarse-grained representation has the highest correlation to current metrics?**
+The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics:  
+
 - RMSD  
 - MCQ  
 - TM-Score
-
+  
 ---
 
 ## Table of Contents
