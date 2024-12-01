@@ -103,8 +103,10 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 
 ### Software Libraries
   - numpy
+  - re
   - scipy
   - pandas
+  - seaborn
   - matplotlib
 
 ### Created folders  
@@ -122,7 +124,7 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 `cd M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-`
  - Install Dependencies and The required Packages
 ```bash
-pip install numpy scipy matplotlib pandas
+pip install numpy scipy matplotlib pandas seaborn
 ```
 
 ---
