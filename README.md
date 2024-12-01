@@ -33,6 +33,7 @@ The goal of the project is to compute a custom coarse-grained RMSD and to compar
   - [Step 2: Merge CG-RMSD and scores](#step-2-merge-cg-rmsd-and-scores)
   - [Step 3: Compute Correlations and Visualizations](#step-3-compute-correlations-and-visualizations)
 - [Output Directories](#output-directories)
+- [Our Results for C5' atom](#Correlation Analysis of C5' Data)
 
 ---
 
@@ -156,9 +157,9 @@ Output:
 •	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).  
 •	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
-Image Output for C5' -
+Example 3DImage Output for C5' atom-
 
-
+![](our_results/3drna_rp07_1.png)
 
 ### Step 2: Merge CG-RMSD and Metrics
 `merge_and_corr.py` (merge_metrics_and_cgRMSD function)
