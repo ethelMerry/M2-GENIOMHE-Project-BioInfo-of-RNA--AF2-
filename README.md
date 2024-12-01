@@ -24,11 +24,11 @@ This repository contains Python scripts and resources for calculating coarse-gra
 - [Dataset](#Dataset)
 - [Requirements](#Requirements)
 - [Installation](#Installation)
+- [Project Structure](#project-structure)
 - [Usage](#usage)
   - [Step 1: Compute CG-RMSD](#step-1-compute-cg-rmsd)
   - [Step 2: Merge CG-RMSD and scores](#step-2-merge-cg-rmsd-and-scores)
   - [Step 3: Compute Correlations and Visualizations](#step-3-compute-correlations-and-visualizations)
-- [Project Structure](#project-structure)
 - [Output Directories](#output-directories)
 - [License](#License)
 
