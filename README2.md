@@ -22,9 +22,9 @@ This repository contains Python scripts and resources for calculating coarse-gra
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Usage](#Usage)
-  - [Step 1: Compute CG-RMSD](#step-1:-compute-cg-rmsd)
-  - [Step 2: Merge CG-RMSD and Metrics](#step-2:-merge-cg-rmsd-and-metrics)
-  - [Step 3: Compute Correlations and Visualizations](#step-3:-compute-correlations-and-visualizations)
+  - [Step 1: Compute CG-RMSD](##step-1:-compute-cg-rmsd)
+  - [Step 2: Merge CG-RMSD and scores](##step-2:-merge-cg-rmsd-and-scores)
+  - [Step 3: Compute Correlations and Visualizations](##step-3:-compute-correlations-and-visualizations)
 - [Project Structure](#project-structure)
 - [Example Outputs](#example-outputs)
 - [Contributing](#contributing)
@@ -37,7 +37,7 @@ This repository contains Python scripts and resources for calculating coarse-gra
 
 This project automates the process of evaluating predicted molecular structures against native structures. The key functionalities include:
 1. Compute Coarse-Grained RMSD (CG-RMSD) between native and predicted structures.
-2. Merging CG-RMSD results with RMSD, MCQ, and TM-score metrics.
+2. Merging CG-RMSD results with RMSD, MCQ, and TM-score scores.
 3. Analyzing with Pearson and Spearman correlations between these metrics and visualizase the relationships through scatter plots.  
 
 ---
@@ -221,3 +221,6 @@ Output Directories:
 ### License
 
 This project is licensed under the [MIT License](https://opensource.org/license/mit).
+
+
+### Contact 
