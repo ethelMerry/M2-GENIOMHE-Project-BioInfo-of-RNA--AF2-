@@ -147,13 +147,13 @@ It:
 
 Input:
 
-•	Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).
-•	Predicted PDB Folder: A directory containing predicted `.pdb` files (`e.g., predicted_rp05`).
+•	Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).  
+•	Predicted PDB Folder: A directory containing predicted `.pdb` files (`e.g., predicted_rp05`).  
 
 Output:
 
-•	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).
-•	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
+•	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).  
+•	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).  
 
 
 ### Step 2: Merge CG-RMSD and Metrics
@@ -168,12 +168,12 @@ It:
 
 Input:
 
-	•	CG-RMSD `.csv` File: Contains CG-RMSD values (`e.g., cg_rmsd_rp05.csv`).
+	•	CG-RMSD `.csv` File: Contains CG-RMSD values (`e.g., cg_rmsd_rp05.csv`).  
 	•	Metrics `.csv` File: Contains metrics like RMSD, MCQ, and TM-Score (`e.g., metrics_rp05.csv`).
 
 Output:
 
-	•	A merged `.csv` file combining CG-RMSD and metrics (`e.g., merged_rp05.csv)`.
+	•	A merged `.csv` file combining CG-RMSD and metrics (`e.g., merged_rp05.csv)`.  
 
 
 ### Step 3: Compute Correlations and Visualizations
@@ -182,9 +182,9 @@ compute_corr.py
 
 This script computes Pearson and Spearman correlations between CG-RMSD and other metrics.  
 It:    
-	-  Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.    
-	-  Generates scatter plots to visualize relationships between CG-RMSD and the metrics.    
-	-  Saves the correlation results to a `.txt` file.  
+	-  Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.      
+	-  Generates scatter plots to visualize relationships between CG-RMSD and the metrics.      
+	-  Saves the correlation results to a `.txt` file.    
 
 Input:
 
@@ -192,7 +192,7 @@ Input:
 
 Output:
 
-	•	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).  
+	•	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).    
  	•	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (`e.g., CORR_IMG_rp05/`).
 
 
