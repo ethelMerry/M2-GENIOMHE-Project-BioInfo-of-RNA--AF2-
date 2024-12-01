@@ -133,9 +133,9 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 ---
 
 ## Usage 
+`python3 ./main_all.py`
 
 ### Step 1: Compute CG-RMSD
-`python3 ./main_all.py`
 This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
 It:  
 	-    Parses native and predicted PDB files to extract atomic coordinates.  
