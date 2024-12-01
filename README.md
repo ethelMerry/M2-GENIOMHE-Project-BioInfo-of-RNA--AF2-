@@ -233,7 +233,7 @@ Output:
 
 *************
 
-# Correlation Analysis of C5' Data
+## Correlation Analysis of C5' Data
 
 After obtaining the correlation results, with `corr_plot.py`, we parse correlation data for each RNA structures of C5', convert to Excel file, and visualize with a line plot to see the individual trends across each rna structures, and a heatmap to compare and assess the strength of multiple correlations in a more condensed and visually intuitive way..
 
