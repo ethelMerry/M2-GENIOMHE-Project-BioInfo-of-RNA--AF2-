@@ -160,7 +160,7 @@ Output:
 	•	A merged .csv file combining CG-RMSD and metrics (e.g., merged_rp05.csv).
 
 
-###Step 3: Compute Correlations and Visualizations
+### Step 3: Compute Correlations and Visualizations
 
 compute_corr.py
 
