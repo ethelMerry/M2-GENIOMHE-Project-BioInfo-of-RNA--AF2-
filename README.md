@@ -256,9 +256,10 @@ Output:
 ## Project Structure
 
 1. `main_all.py`: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
-2. `compute_cgRMSD.py`: Defines functions for CG-RMSD computation.
-3. `merge_and_corr.py`: Handles file merging and correlation computations.
-4. `predict_cgRMSD.py`: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
+2. `predict_cgRMSD.py`: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
+3. `compute_cgRMSD.py`: Defines functions for CG-RMSD computation.
+4. `merge_and_corr.py`: Handles file merging and correlation computations.
+
 
 ## Output Directories
 - **CG-RMSD**: Contains CG-RMSD results.
@@ -269,8 +270,7 @@ Output:
 
 
 
-##
- License
+## License
 
 This project is licensed under the [MIT License](https://opensource.org/license/mit).
 
