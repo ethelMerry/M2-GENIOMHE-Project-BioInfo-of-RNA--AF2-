@@ -87,17 +87,16 @@ This project automates the process of evaluating predicted molecular structures 
 
 ---
 
-## Dataset 
+## Dataset  
 The dataset consists of three components:
 
 	-	NATIVE: Native PDB structures from the RNA-Puzzles dataset (Cruz et al., 2012).
 	-	PREDS: Predicted PDB structures from various models.
 	-	SCORES: Precomputed metrics (RMSD, MCQ, TM-Score) comparing native and predicted structures.
 
+Dataset Link  
 
-Dataset Links
-
-Dataset: https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
+https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 
 ---
 
@@ -114,16 +113,25 @@ Dataset: https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/da
   - pandas
   - matplotlib
 
+### Created folders  
+
+  - CG-RMSD ==> Contains CG-RMSD results.
+  - CG_RMSD_PLOTS ==>  Contains 3D scatter plots visualizing the alignment results.
+  - MERGED ==> Contains merged results with metrics.
+  - CORR_PLOTS ==> Contains correlation's plots.
+  - CORR_RES ==> Contains correlation results.
+
 
 ## Installation 
- - Clone the repository:
+ - Clone the repository:  
 `git clone https://github.com/ethelMerry/M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-.git`  
 `cd RNA`
 
 ## Usage 
 ### Step 1: Compute CG-RMSD
 
-This script handles the calculation of CG-RMSD for native and predicted RNA structures. It:
+This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
+It:
 	•	Parses native and predicted PDB files to extract atomic coordinates.
 	•	Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.
 	•	Computes normalized CG-RMSD values for selected atoms or all atoms.
