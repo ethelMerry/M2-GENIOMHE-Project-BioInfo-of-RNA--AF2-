@@ -115,11 +115,11 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 
 ### Created folders  
 
-  - CG-RMSD ==> Contains CG-RMSD results.
-  - CG_RMSD_PLOTS ==>  Contains 3D scatter plots visualizing the alignment results.
-  - MERGED ==> Contains merged results with metrics.
-  - CORR_PLOTS ==> Contains correlation's plots.
-  - CORR_RES ==> Contains correlation results.
+  - CG-RMSD 
+  - CG_RMSD_PLOTS 
+  - MERGED
+  - CORR_PLOTS 
+  - CORR_RES
 
 
 ## Installation 
@@ -191,6 +191,7 @@ Output:
 ### Main Workflow: main_all.py
 
 The main_all.py script orchestrates the entire workflow:  
+
 	Step 1: Prompts the user to calculate CG-RMSD for native and predicted PDB files.  
 	Step 2: Merges CG-RMSD results with precomputed metrics.  
 	Step 3: Computes correlations and generates visualizations.  
@@ -222,8 +223,11 @@ Example Output:
 
 ## Output Directories:
 - CG-RMSD: Contains CG-RMSD results.
+- CG_RMSD_PLOTS: Contains 3D scatter plots visualizing the alignment results.
 - MERGED: Contains merged results with metrics.
-- Correlation_Plots: Stores scatter plots.
+- CORR_RES: Contains correlation results.
+- CORR_PLOTS: Stores scatter plots.  
+
 
 
 ### License
@@ -231,4 +235,3 @@ Example Output:
 This project is licensed under the [MIT License](https://opensource.org/license/mit).
 
 
-### Contact 
