@@ -235,7 +235,15 @@ Output:
 
 # Correlation Analysis of C5' Data
 
-With a `corr_plot.py`, we parse correlation data for each RNA structures of C5', convert to Excel file, and visualize with a line plot to see the individual trends across each rna structures, and a heatmap to compare and assess the strength of multiple correlations in a more condensed and visually intuitive way..
+After obtaining the correlation results, with `corr_plot.py`, we parse correlation data for each RNA structures of C5', convert to Excel file, and visualize with a line plot to see the individual trends across each rna structures, and a heatmap to compare and assess the strength of multiple correlations in a more condensed and visually intuitive way..
+
+## Overview
+
+The script `corr_plot.py` performs the following steps:
+
+1. **Parse Correlation Data**: 
+   - It reads multiple `.txt` files in the correlation results folder, each containing Pearson and Spearman correlation coefficients for RMSD, MCQ, and TM-score.
+   - The extracted correlation data is saved in an Excel file (`cgRMSD_correlations_summary.xlsx`).
 
 **Heatmap**:
 ![Correlation Heatmap](our_results/C5'_correlation_heatmap.png)
@@ -255,6 +263,6 @@ The output files include:
 2. `C5'_correlation_heatmap.png`: Heatmap of correlation scores.
 3. `C5'_correlation_scores.png`: Line plot of Pearson and Spearman scores.
 
-THANK YOU!
+## THANK YOU!
 
 
