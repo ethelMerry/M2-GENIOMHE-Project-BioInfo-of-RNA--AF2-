@@ -128,7 +128,7 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 ## Installation 
  - Clone the repository:  
 `git clone https://github.com/ethelMerry/M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-.git`  
-`cd RNA`
+`cd M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-`
 
 ---
 
