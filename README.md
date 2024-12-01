@@ -221,11 +221,11 @@ Input:
 
 Output:
 
-•	Print CG-RMSD value in the terminal console.
+•	Print CG-RMSD value in the terminal console for your choice of atoms.
 
 ## Output Directories
 - **cg-RMSD Results**: Contains CG-RMSD results.
-- **CG_RMSD_Plots**: Contains 3D scatter plots visualizing the alignment results.
+- **cg_RMSD_Plots**: Contains 3D scatter plots visualizing the alignment results.
 - **Merged results**: Contains merged results with metrics.
 - **Corr Results**: Contains correlation results.
 - **Corr Plots**: Stores scatter plots.  
