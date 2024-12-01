@@ -5,7 +5,10 @@ Member of the team :
 [13Aigrie](https://github.com/13Aigrie) - 
 [Ethelmerry](https://github.com/skyethel)
 
-The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics: RMSD, MCQ and TM-Score.
+The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics:
+- RMSD  
+- MCQ  
+- TM-Score
 
 The question we want to answer is : **Which coarse-grained representation has the highest correlation to current metrics?**
 
