@@ -10,6 +10,7 @@ Member of the team :
 [Ethelmerry](https://github.com/skyethel)
 
 The question we want to answer is : **Which coarse-grained representation has the highest correlation to current metrics?**
+
 The goal of the project is to compute a custom coarse-grained RMSD and to compare its correlation with three main metrics:  
 
 - RMSD  
