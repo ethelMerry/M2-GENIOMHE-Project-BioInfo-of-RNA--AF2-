@@ -241,7 +241,7 @@ With a `corr_plot.py`, we parse correlation data for each RNA structures of C5',
 ![Correlation Heatmap](our_results/C5'_correlation_heatmap.png)
 
 **Line Plot**:
-![Correlation Scores Line Plot](C5'_correlation_scores.png)
+![Correlation Scores Line Plot](our_results/C5'_correlation_scores.png)
 
 ## Usage
 
