@@ -133,7 +133,21 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 ---
 
 ## Usage 
+
+### How to Run 
+
 `python3 ./main_all.py`
+
+Follow the prompt : 
+
+1.  Provide the paths to native and predicted PDB files.  
+
+2.  Specify atom types to include (`e.g., C5, P, or all). 
+
+3.  Merge the CG-RMSD results with precomputed scores.  
+
+4.  Generate and save correlation results and visualizations.
+
 
 ### Step 1: Compute CG-RMSD
 
@@ -207,19 +221,6 @@ The `main_all.py` script orchestrates the entire workflow:
 	Step 1: Prompts the user to calculate CG-RMSD for native and predicted PDB files.  
 	Step 2: Merges CG-RMSD results with precomputed metrics.  
 	Step 3: Computes correlations and generates visualizations.  
-
-### How to Run 
-`python main_all.py`
-
-Follow the prompt : 
-
-1.  Provide the paths to native and predicted PDB files.  
-
-2.  Specify atom types to include (`e.g., C5, P, or all). 
-
-3.  Merge the CG-RMSD results with precomputed scores.  
-
-4.  Generate and save correlation results and visualizations.
 
 
 ### Example Output
