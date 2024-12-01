@@ -150,10 +150,12 @@ This script handles the calculation of CG-RMSD for native and predicted RNA stru
 	-    Generates 3D scatter plots visualizing the alignment results.    
 
 Input:
+
 •	Native PDB File/Folder: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).  
 •	Predicted PDB Folder: A directory containing predicted `.pdb` files (`e.g., predicted_rp05`).  
 
 Output:
+
 •	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).  
 •	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
@@ -168,10 +170,12 @@ This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-S
 	-   Saves the merged results as a new `.csv` file for further analysis.  
 
 Input:
+
 •	CG-RMSD `.csv` File: Contains CG-RMSD values (`e.g., cg_rmsd_rp05.csv`).  
 •	Metrics `.csv` File: Contains metrics like RMSD, MCQ, and TM-Score (`e.g., metrics_rp05.csv`).
 
 Output:
+
 •	A merged `.csv` file combining CG-RMSD and metrics (`e.g., merged_rp05.csv)`.  
 
 ### Step 3: Compute Correlations and Visualizations
@@ -184,9 +188,11 @@ This script computes Pearson and Spearman correlations between CG-RMSD and other
 	-  Saves the correlation results to a `.txt` file.    
 
 Input:
+
 •	Merged `.csv` files (`e.g., merged_rp05.csv`).
 
 Output:
+
 •	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).    
 •	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (`e.g., CORR_IMG_rp05/`).
 
@@ -209,10 +215,12 @@ The `main_all.py` script orchestrates the entire workflow for all the three step
 	-    Computes normalized CG-RMSD values for the native and the predicted structure.  
  
 Input:
+
 •	Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).  
 •	Predicted PDB File : A `.pdb` file containing  the predicted structure  (`e.g., predicted_rp05.pdb`).  
 
 Output:
+
 •	Print CG-RMSD value in the terminal console.
 
 ## Output Directories
