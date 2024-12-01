@@ -67,17 +67,21 @@ This project automates the process of evaluating predicted molecular structures 
   - Inline comments are used to clarify complex logic.
 
 ### 2. **Modular Structure**
-- **Separation of Concerns**: Each script serves a distinct purpose and is well-documented::
+- **Separation of Concerns**: Each script serves a distinct purpose and is well-documented:
+
   - `compute_cgRMSD.py`: Responsible for parsing PDB files, extracting atomic coordinates, and computing CG-RMSD.
   - `merge_and_corr.py`: Handles the merging of CG-RMSD results with external metrics and computes correlations.
   - `main_all.py`: Acts as the main driver script to execute the entire workflow sequentially.
   - `CustomCGRMSD.py`: Provides a reusable class-based implementation for custom CG-RMSD computation.
+
 - **Reusable Functions**: Functions like `ensure_dir_exists` and `parse_pdb` are modular and shared across scripts.
 
 ### 3. **Error Handling**
 - **Descriptive Errors**: The scripts provide meaningful error messages for common issues like:
+
   - Shape mismatches between native and predicted structures.
   - Missing or invalid data (`NaN`/`inf` values).
+  
 - **Graceful Skipping**: Files with errors are skipped, and the processing continues for the remaining files.
 
 ### 4. **Performance Optimizations**
