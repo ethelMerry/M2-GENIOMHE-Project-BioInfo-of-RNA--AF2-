@@ -17,7 +17,7 @@ This repository contains Python scripts and resources for calculating coarse-gra
 
 - [Overview](#overview)
 - [Features](#Features)
-- [Quality of the code](#quallity-of-the-code)
+- [Quality of the code](#quality-of-the-code)
 - [Dataset](#Dataset)
 - [Requirements](#Requirements)
 - [Installation](#Installation)
