@@ -222,11 +222,11 @@ Example Output:
 4. CustomCGRMSD.py: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
 
 ## Output Directories:
-- CG-RMSD: Contains CG-RMSD results.
-- CG_RMSD_PLOTS: Contains 3D scatter plots visualizing the alignment results.
-- MERGED: Contains merged results with metrics.
-- CORR_RES: Contains correlation results.
-- CORR_PLOTS: Stores scatter plots.  
+- **CG-RMSD**: Contains CG-RMSD results.
+- **CG_RMSD_PLOTS**: Contains 3D scatter plots visualizing the alignment results.
+- **MERGED**: Contains merged results with metrics.
+- **CORR_RES**: Contains correlation results.
+- **CORR_PLOTS**: Stores scatter plots.  
 
 
 
