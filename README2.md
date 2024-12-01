@@ -186,7 +186,7 @@ It:
 	-  Generates scatter plots to visualize relationships between CG-RMSD and the metrics.      
 	-  Saves the correlation results to a `.txt` file.    
 
-`Input:
+Input:
 
 •	Merged `.csv` files (`e.g., merged_rp05.csv`).
 
@@ -194,7 +194,7 @@ Output:
 
 •	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).    
 •	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (`e.g., CORR_IMG_rp05/`).
-`
+
 
 
 ### Main Workflow: main_all.py
