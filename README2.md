@@ -65,7 +65,7 @@ This project automates the process of evaluating predicted molecular structures 
 
 ### 2. **Modular Structure**
 - **Separation of Concerns**: Each script serves a distinct purpose and is well-documented::
-  - `compute_cgRMSD.py`: Responsible for parsing PDB files, extracting atomic coordinates, and computing CG-RMSD
+  - `compute_cgRMSD.py`: Responsible for parsing PDB files, extracting atomic coordinates, and computing CG-RMSD.
   - `merge_and_corr.py`: Handles the merging of CG-RMSD results with external metrics and computes correlations.
   - `main_all.py`: Acts as the main driver script to execute the entire workflow sequentially.
   - `CustomCGRMSD.py: Provides a reusable class-based implementation for custom CG-RMSD computation.
@@ -157,7 +157,8 @@ Output:
 
 merge_and_corr.py (merge_metrics_and_cgRMSD function)
 
-This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). It:
+This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). 
+It:  
 	•	Loads CG-RMSD .csv files and metrics .csv files.
 	•	Joins the two datasets on the structure IDs (e.g., filenames).
 	•	Saves the merged results as a new .csv file for further analysis.
