@@ -157,7 +157,7 @@ Output:
 •	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).  
 •	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
-Example 3DImage Output for C5' atom-
+Example 3DImage Output for C5' atom for one predicted structure (rp07):
 
 ![](our_results/3drna_rp07_1.png)
 
