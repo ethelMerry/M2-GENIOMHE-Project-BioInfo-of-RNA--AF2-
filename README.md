@@ -4,6 +4,7 @@ This project provides Python scripts to compute the coarse-grained RMSD (CG-RMSD
 Below is a detailed description of each script and how to use them effectively.
 
 This is a group project for the course Bioinformatics of RNA and non-coding world.
+The goal is to answe **Which coarse-grained representation has the highest correlation to current metrics?**
 
 Member of the team : 
 [Stephaniefouteau](https://github.com/stephaniefouteau) - 
