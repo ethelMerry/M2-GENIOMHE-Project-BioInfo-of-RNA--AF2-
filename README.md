@@ -33,7 +33,7 @@ The goal of the project is to compute a custom coarse-grained RMSD and to compar
   - [Step 2: Merge CG-RMSD and scores](#step-2-merge-cg-rmsd-and-scores)
   - [Step 3: Compute Correlations and Visualizations](#step-3-compute-correlations-and-visualizations)
 - [Output Directories](#output-directories)
-- [Our Results for C5' atom](#Correlation Analysis of C5' Data)
+- [Our Result- Correation Analysis](#Correation-Analysis-Of-C5'-data)
 
 ---
 
@@ -229,7 +229,32 @@ Output:
 - **cg_RMSD_Plots**: Contains 3D scatter plots visualizing the alignment results.
 - **Merged results**: Contains merged results with metrics.
 - **Corr Results**: Contains correlation results.
-- **Corr Plots**: Stores the plots.  
+- **Corr Plots**: Stores the plots.
 
+*************
+
+# Correlation Analysis of C5' Data
+
+With a `corr_plot.py`, we parse correlation data for each RNA structures of C5', convert to Excel file, and visualize with a line plot to see the individual trends across each rna structures, and a heatmap to compare and assess the strength of multiple correlations in a more condensed and visually intuitive way..
+
+**Heatmap**:
+![Correlation Heatmap](our_results/C5'_correlation_heatmap.png)
+
+**Line Plot**:
+![Correlation Scores Line Plot](C5'_correlation_scores.png)
+
+## Usage
+
+- Ensure Python 3, along with the required packages (`pandas`, `seaborn`, `matplotlib`), is installed.
+
+
+## Results
+
+The output files include:
+1. `cgRMSD_correlations_summary.xlsx`: A summary of correlation values.
+2. `C5'_correlation_heatmap.png`: Heatmap of correlation scores.
+3. `C5'_correlation_scores.png`: Line plot of Pearson and Spearman scores.
+
+THANK YOU!
 
 
