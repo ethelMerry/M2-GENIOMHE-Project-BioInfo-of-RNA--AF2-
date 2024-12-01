@@ -71,7 +71,7 @@ This project automates the process of evaluating predicted molecular structures 
   - `compute_cgRMSD.py`: Responsible for parsing PDB files, extracting atomic coordinates, and computing CG-RMSD.
   - `merge_and_corr.py`: Handles the merging of CG-RMSD results with external metrics and computes correlations.
   - `main_all.py`: Acts as the main driver script to execute the entire workflow sequentially.
-  - `CustomCGRMSD.py: Provides a reusable class-based implementation for custom CG-RMSD computation.
+  - `CustomCGRMSD.py`: Provides a reusable class-based implementation for custom CG-RMSD computation.
 - **Reusable Functions**: Functions like `ensure_dir_exists` and `parse_pdb` are modular and shared across scripts.
 
 ### 3. **Error Handling**
