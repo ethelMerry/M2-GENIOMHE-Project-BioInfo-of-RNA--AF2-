@@ -231,6 +231,28 @@ The `main_all.py` script orchestrates the entire workflow:
 	•	Scatter Plots: plots/CORR_IMG_rp05/
 
 
+### **How to Run**
+python3 ./predict_cgRMSD.py
+
+	-    Parses native and predicted PDB files to extract atomic coordinates.  
+	-    Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.
+ 	-    Skip predicted structures with different number of atoms compared to the native.
+	-    Computes normalized CG-RMSD values for the native and the predicted structure.  
+ 
+Input:
+
+•	Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).  
+•	Predicted PDB File : A `.pdb` file containing  the predicted structure  (`e.g., predicted_rp05.pdb`).  
+
+Output:
+
+•	Print CG-RMSD value in the terminal console.
+
+
+
+
+
+
 ## Project Structure
 
 1. `main_all.py`: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
