@@ -1,4 +1,4 @@
-This is a group project for the course- Bioinformatics of RNA and non-coding world.
+This is a group project for the course Bioinformatics of RNA and non-coding world.
 
 Member of the team : 
 [Stephaniefouteau](https://github.com/stephaniefouteau) - 
