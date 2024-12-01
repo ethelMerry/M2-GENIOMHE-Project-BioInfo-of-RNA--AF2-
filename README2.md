@@ -121,13 +121,17 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
   - CORR_PLOTS 
   - CORR_RES
 
+--- 
 
 ## Installation 
  - Clone the repository:  
 `git clone https://github.com/ethelMerry/M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-.git`  
 `cd RNA`
 
+---
+
 ## Usage 
+
 ### Step 1: Compute CG-RMSD
 
 This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
@@ -174,9 +178,9 @@ compute_corr.py
 
 This script computes Pearson and Spearman correlations between CG-RMSD and other metrics. 
 It:  
-	•Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.  
-	•Generates scatter plots to visualize relationships between CG-RMSD and the metrics.  
-	•Saves the correlation results to a .txt file.
+	• Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.  
+	• Generates scatter plots to visualize relationships between CG-RMSD and the metrics.  
+	• Saves the correlation results to a .txt file.
 
 Input:
 
@@ -184,8 +188,8 @@ Input:
 
 Output:
 
-    - Correlation Results: A .txt file summarizing correlations for each metric (e.g., corr_results/corr_rp05.txt).  
-    - Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (e.g., CORR_IMG_rp05/).
+	•	Correlation Results: A .txt file summarizing correlations for each metric (e.g., corr_results/corr_rp05.txt).  
+ 	•	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (e.g., CORR_IMG_rp05/).
 
 
 
