@@ -204,7 +204,7 @@ The `main_all.py` script orchestrates the entire workflow:
 	Step 2: Merges CG-RMSD results with precomputed metrics.  
 	Step 3: Computes correlations and generates visualizations.  
 
-### How to Run:
+### How to Run 
 `python main_all.py`
 
 Follow the prompt : 
@@ -218,7 +218,7 @@ Follow the prompt :
 4.  Generate and save correlation results and visualizations.
 
 
-### Example Output:
+### Example Output
 
 	•	CG-RMSD Results: output/cg_rmsd_rp05.csv
 	•	Merged Metrics: output/merged_rp05.csv
@@ -233,7 +233,7 @@ Follow the prompt :
 3. merge_and_corr.py: Handles file merging and correlation computations.
 4. CustomCGRMSD.py: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
 
-## Output Directories:
+## Output Directories
 - **CG-RMSD**: Contains CG-RMSD results.
 - **CG_RMSD_PLOTS**: Contains 3D scatter plots visualizing the alignment results.
 - **MERGED**: Contains merged results with metrics.
