@@ -131,6 +131,13 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 `cd M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-`
 
 ---
+## Project Structure
+
+1. `main_all.py`: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
+2. `predict_cgRMSD.py`: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
+3. `compute_cgRMSD.py`: Defines functions for CG-RMSD computation.
+4. `merge_and_corr.py`: Handles file merging and correlation computations.
+
 
 ## Usage 
 
@@ -147,14 +154,6 @@ Follow the prompt :
 3.  Merge the CG-RMSD results with precomputed scores.  
 
 4.  Generate and save correlation results and visualizations.
-
-## Project Structure
-
-1. `main_all.py`: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
-2. `predict_cgRMSD.py`: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
-3. `compute_cgRMSD.py`: Defines functions for CG-RMSD computation.
-4. `merge_and_corr.py`: Handles file merging and correlation computations.
-
 
 ### Step 1: Compute CG-RMSD
 
