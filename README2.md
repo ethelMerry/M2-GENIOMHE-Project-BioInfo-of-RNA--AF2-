@@ -162,9 +162,9 @@ merge_and_corr.py (merge_metrics_and_cgRMSD function)
 
 This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). 
 It:  
-  - Loads CG-RMSD `.csv` files and metrics `.csv` files.  
-  - Joins the two datasets on the structure IDs (`e.g., filenames`).  
-  - Saves the merged results as a new `.csv` file for further analysis.  
+	-   Loads CG-RMSD `.csv` files and metrics `.csv` files.  
+	-   Joins the two datasets on the structure IDs (`e.g., filenames`).  
+	-   Saves the merged results as a new `.csv` file for further analysis.  
 
 Input:
 
@@ -182,9 +182,9 @@ compute_corr.py
 
 This script computes Pearson and Spearman correlations between CG-RMSD and other metrics.  
 It:    
-  - Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.      
-  - Generates scatter plots to visualize relationships between CG-RMSD and the metrics.      
-  - Saves the correlation results to a `.txt` file.    
+	-  Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.      
+	-  Generates scatter plots to visualize relationships between CG-RMSD and the metrics.      
+	-  Saves the correlation results to a `.txt` file.    
 
 Input:
 
