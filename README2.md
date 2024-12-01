@@ -190,10 +190,10 @@ Output:
 
 ### Main Workflow: main_all.py
 
-The main_all.py script orchestrates the entire workflow:
-	1.	Step 1: Prompts the user to calculate CG-RMSD for native and predicted PDB files.
-	2.	Step 2: Merges CG-RMSD results with precomputed metrics.
-	3.	Step 3: Computes correlations and generates visualizations.
+The main_all.py script orchestrates the entire workflow:  
+	Step 1: Prompts the user to calculate CG-RMSD for native and predicted PDB files.  
+	Step 2: Merges CG-RMSD results with precomputed metrics.  
+	Step 3: Computes correlations and generates visualizations.  
 
 ### How to Run:
 python main_all.py
