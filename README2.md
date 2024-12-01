@@ -142,18 +142,18 @@ It:
 	•	Parses native and predicted PDB files to extract atomic coordinates.
 	•	Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.
 	•	Computes normalized CG-RMSD values for selected atoms or all atoms.
-	•	Saves results in a .csv file.
+	•	Saves results in a `.csv` file.
 	•	Generates 3D scatter plots visualizing the alignment results.
 
 Input:
 
-	•	Native PDB File: A .pdb file containing the native structure (e.g., native_rp05.pdb).
-	•	Predicted PDB Folder: A directory containing predicted .pdb files (e.g., predicted_rp05/).
+	•	Native PDB File: A `.pdb` file containing the native structure (`e.g., native_rp05.pdb`).
+	•	Predicted PDB Folder: A directory containing predicted `.pdb` files (`e.g., predicted_rp05`).
 
 Output:
 
-	•	A .csv file containing CG-RMSD values for each predicted structure (e.g., cg_rmsd_rp05.csv).
-	•	A folder of 3D scatter plots visualizing alignments (e.g., plots_rp05/).
+	•	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).
+	•	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
 
 ### Step 2: Merge CG-RMSD and Metrics
@@ -162,18 +162,18 @@ merge_and_corr.py (merge_metrics_and_cgRMSD function)
 
 This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). 
 It:  
-	•	Loads CG-RMSD .csv files and metrics .csv files.
-	•	Joins the two datasets on the structure IDs (e.g., filenames).
-	•	Saves the merged results as a new .csv file for further analysis.
+	•	Loads CG-RMSD `.csv` files and metrics `.csv` files.
+	•	Joins the two datasets on the structure IDs (`e.g., filenames`).
+	•	Saves the merged results as a new `.csv` file for further analysis.
 
 Input:
 
-	•	CG-RMSD .csv File: Contains CG-RMSD values (e.g., cg_rmsd_rp05.csv).
-	•	Metrics .csv File: Contains metrics like RMSD, MCQ, and TM-Score (e.g., metrics_rp05.csv).
+	•	CG-RMSD `.csv` File: Contains CG-RMSD values (`e.g., cg_rmsd_rp05.csv`).
+	•	Metrics `.csv` File: Contains metrics like RMSD, MCQ, and TM-Score (`e.g., metrics_rp05.csv`).
 
 Output:
 
-	•	A merged .csv file combining CG-RMSD and metrics (e.g., merged_rp05.csv).
+	•	A merged `.csv` file combining CG-RMSD and metrics (`e.g., merged_rp05.csv)`.
 
 
 ### Step 3: Compute Correlations and Visualizations
@@ -184,16 +184,16 @@ This script computes Pearson and Spearman correlations between CG-RMSD and other
 It:  
 	• Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.  
 	• Generates scatter plots to visualize relationships between CG-RMSD and the metrics.  
-	• Saves the correlation results to a .txt file.
+	• Saves the correlation results to a `.txt` file.
 
 Input:
 
-    - Merged .csv files (e.g., merged_rp05.csv).
+    - Merged `.csv` files (`e.g., merged_rp05.csv`).
 
 Output:
 
-	•	Correlation Results: A .txt file summarizing correlations for each metric (e.g., corr_results/corr_rp05.txt).  
- 	•	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (e.g., CORR_IMG_rp05/).
+	•	Correlation Results: A `.txt` file summarizing correlations for each metric (`e.g., corr_results/corr_rp05.txt`).  
+ 	•	Scatter Plots: A folder containing visualizations of CG-RMSD vs. RMSD, MCQ, and TM-Score (`e.g., CORR_IMG_rp05/`).
 
 
 
@@ -212,7 +212,7 @@ Follow the prompt :
 
 1.  Provide the paths to native and predicted PDB files.  
 
-2.  Specify atom types to include (e.g., C5, P, or all). 
+2.  Specify atom types to include (`e.g., C5, P, or all). 
 
 3.  Merge the CG-RMSD results with precomputed scores.  
 
