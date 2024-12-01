@@ -1,4 +1,7 @@
-Welcome to the CG-RMSD Project repository! This project provides Python scripts to compute the coarse-grained RMSD (CG-RMSD) between native and predicted PDB structures for specified atoms. The repository is designed to offer flexibility for users interested in bulk processing of data, as well as a targeted CG-RMSD computation for individual native-predicted pairs. Below is a detailed description of each script and how to use them effectively.
+Welcome to the CG-RMSD Project repository! 
+
+This project provides Python scripts to compute the coarse-grained RMSD (CG-RMSD) between native and predicted PDB structures for specified atoms. The repository is designed to offer flexibility for users interested in bulk processing of data, as well as a targeted CG-RMSD computation for individual native-predicted pairs.
+Below is a detailed description of each script and how to use them effectively.
 
 This is a group project for the course Bioinformatics of RNA and non-coding world.
 
@@ -11,8 +14,6 @@ The goal of the project is to compute a custom coarse-grained RMSD and to compar
 - RMSD  
 - MCQ  
 - TM-Score
-
-This repository contains Python scripts and resources for calculating coarse-grained root mean square deviation (CG-RMSD) and analyzing its correlation with structural metrics (RMSD, MCQ, TM-score). The project emphasizes clean code, structured workflows, and a detailed analysis pipeline.
 
 ---
 
