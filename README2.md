@@ -89,14 +89,15 @@ This project automates the process of evaluating predicted molecular structures 
 
 ## Dataset 
 The dataset consists of three components:
-	1.	NATIVE: Native PDB structures from the RNA-Puzzles dataset (Cruz et al., 2012).
-	2.	PREDS: Predicted PDB structures from various models.
-	3.	SCORES: Precomputed metrics (RMSD, MCQ, TM-Score) comparing native and predicted structures.
+
+	-1.	NATIVE: Native PDB structures from the RNA-Puzzles dataset (Cruz et al., 2012).
+	-2.	PREDS: Predicted PDB structures from various models.
+	-3.	SCORES: Precomputed metrics (RMSD, MCQ, TM-Score) comparing native and predicted structures.
 
 
 Dataset Links
 
-	•	Dataset: https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
+Dataset: https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 
 ---
 
