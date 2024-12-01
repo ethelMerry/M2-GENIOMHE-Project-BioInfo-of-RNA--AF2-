@@ -109,13 +109,6 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
   - seaborn
   - matplotlib
 
-### Created folders  
-  - CG-RMSD 
-  - CG_RMSD_PLOTS 
-  - MERGED
-  - CORR_PLOTS 
-  - CORR_RES
-
 --- 
 
 ## Installation 
@@ -162,6 +155,9 @@ Output:
 
 •	A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).  
 •	A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
+
+Image Output for C5' -
+
 
 
 ### Step 2: Merge CG-RMSD and Metrics
