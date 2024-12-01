@@ -29,16 +29,24 @@ class CustomCGRMSD:
             raise ValueError("No atoms found in one or both PDB files.")
         
         # Use the imported compute_cgRMSD function
-        # The function now returns both rotation and normalized CG-RMSD
         _, cgRMSD_value = compute_cgRMSD(true_atoms, predicted_atoms)  # Unpack and get only the CG-RMSD value
         
         return cgRMSD_value  # Return the CG-RMSD value only
 
 # Main execution for user input
 if __name__ == "__main__":
-    # Prompt the user to enter atom types to consider
-    atom_types_input = input("Enter the atom types to calculate CG-RMSD for (comma-separated, e.g., 'P,C5',O5'): ")
-    atom_names = [atom.strip() for atom in atom_types_input.split(",")]
+    # Prompt the user to enter atom types or choose "all"
+    atom_types_input = input(
+        "Enter the atom types to calculate CG-RMSD for (comma-separated, e.g., 'P,C5',O5') or type 'all' for all atoms: "
+    )
+
+    # Determine if "all" atoms should be included
+    if atom_types_input.strip().lower() == "all":
+        atom_names = None  # No specific atom names
+        all_atoms = True
+    else:
+        atom_names = [atom.strip() for atom in atom_types_input.split(",")]
+        all_atoms = False
 
     # Prompt the user to enter the native PDB file path
     native_path = input("Enter the path to the native PDB file: ")
@@ -47,7 +55,7 @@ if __name__ == "__main__":
     predicted_path = input("Enter the path to the predicted PDB file: ")
 
     # Instantiate the CG-RMSD calculator
-    cgrmsd_calculator = CustomCGRMSD(atom_names=atom_names)
+    cgrmsd_calculator = CustomCGRMSD(atom_names=atom_names, all_atoms=all_atoms)
 
     # Predict CG-RMSD
     try:
