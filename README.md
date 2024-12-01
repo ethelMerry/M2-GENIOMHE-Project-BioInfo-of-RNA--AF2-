@@ -103,8 +103,8 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
   - Python 3.7+
 
 ### Software Libraries
-  - numpy
   - re
+  - numpy
   - scipy
   - pandas
   - seaborn
