@@ -202,8 +202,11 @@ python main_all.py
 Follow the prompt : 
 
 `1.Provide the paths to native and predicted PDB files.  
-2.Specify atom types to include (e.g., C5, P, or all).  
+
+2.Specify atom types to include (e.g., C5, P, or all). 
+
 3.Merge the CG-RMSD results with precomputed scores.  
+
 4.Generate and save correlation results and visualizations.`
 
 Example Output:
