@@ -42,7 +42,7 @@ This project automates the process of evaluating predicted molecular structures 
 The key functionalities include:
 1. Compute Coarse-Grained RMSD (CG-RMSD) between native and predicted structures.
 2. Merging CG-RMSD results with RMSD, MCQ, and TM-score scores.
-3. Analyzing with Pearson and Spearman correlations between these metrics and visualizase the relationships through scatter plots.  
+3. Analyzing with Pearson and Spearman correlations between these metrics and visualize the relationships through plots.  
 
 ---
 
@@ -186,7 +186,7 @@ Output:
 This script computes Pearson and Spearman correlations between CG-RMSD and other metrics.  
 
 	-  Computes correlation coefficients for CG-RMSD vs. RMSD, MCQ, and TM-Score.      
-	-  Generates scatter plots to visualize relationships between CG-RMSD and the metrics.      
+	-  Plots to visualize relationships between CG-RMSD and the metrics.      
 	-  Saves the correlation results to a `.txt` file.    
 
 Input:
@@ -206,7 +206,7 @@ The `main_all.py` script orchestrates the entire workflow for all the three step
 	•	CG-RMSD Results: /home/merryethel/cg_RMSD/CG-RMSD results/rp05.csv
 	•	Merged Metrics: /home/merryethel/cg_RMSD/Merged results/merged_rp05.csv
 	•	Correlation Results: /home/merryethel/cg_RMSD/Corr Results/corr_rp05.txt
-	•	Scatter Plots: /home/merryethel/cg_RMSD/Corr Plots/CORR_IMG_rp05/
+	•	Plots: /home/merryethel/cg_RMSD/Corr Plots/CORR_IMG_rp05/
 
 ### **How to Run `predict_cgRMSD.py'**
 `python3 ./predict_cgRMSD.py`
@@ -230,7 +230,7 @@ Output:
 - **cg_RMSD_Plots**: Contains 3D scatter plots visualizing the alignment results.
 - **Merged results**: Contains merged results with metrics.
 - **Corr Results**: Contains correlation results.
-- **Corr Plots**: Stores scatter plots.  
+- **Corr Plots**: Stores the plots.  
 
 
 
