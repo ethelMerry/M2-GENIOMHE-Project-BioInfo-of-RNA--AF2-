@@ -214,7 +214,8 @@ Follow the prompt :
 
 4.  Generate and save correlation results and visualizations.
 
-Example Output:
+
+## Example Output:
 
 	•	CG-RMSD Results: output/cg_rmsd_rp05.csv
 	•	Merged Metrics: output/merged_rp05.csv
