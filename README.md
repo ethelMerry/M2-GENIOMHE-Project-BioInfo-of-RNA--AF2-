@@ -232,7 +232,7 @@ The `main_all.py` script orchestrates the entire workflow:
 
 
 ### **How to Run**
-python3 ./predict_cgRMSD.py
+`python3 ./predict_cgRMSD.py`
 
 	-    Parses native and predicted PDB files to extract atomic coordinates.  
 	-    Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.
