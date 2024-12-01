@@ -138,7 +138,7 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 ### Step 1: Compute CG-RMSD
 
 This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
-It: 
+It:  
 	•	Parses native and predicted PDB files to extract atomic coordinates.  
 	•	Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.  
 	•	Computes normalized CG-RMSD values for selected atoms or all atoms.  
@@ -152,7 +152,7 @@ Input:
 
 Output:
 
--    A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).
+-   A `.csv` file containing CG-RMSD values for each predicted structure (`e.g., cg_rmsd_rp05.csv`).
 -   A folder of 3D scatter plots visualizing alignments (`e.g., plots_rp05/`).
 
 
