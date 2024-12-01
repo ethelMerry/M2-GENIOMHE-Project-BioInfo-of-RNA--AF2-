@@ -49,7 +49,7 @@ This project automates the process of evaluating predicted molecular structures 
 - **Visualization**: Generates scatter plots of CG-RMSD vs. other metrics.
 - **Documentation**: Detailed explanations of code structure and usage in this README.
 
-
+---
 
 ## Quality of the code
 
