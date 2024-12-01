@@ -117,8 +117,8 @@ Dataset: https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/da
 
 ## Installation 
  - Clone the repository:
-`git clone https://github.com/ethelMerry/M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-.git`
-\n`cd RNA`
+`git clone https://github.com/ethelMerry/M2-GENIOMHE-Project-BioInfo-of-RNA--AF2-.git`  
+`cd RNA`
 
 ## Usage 
 ### Step 1: Compute CG-RMSD
@@ -207,15 +207,15 @@ Example Output:
 
 ## Project Structure
 
-	•	main_all.py: Orchestrates CG-RMSD computation, merging, and correlation analysis.
-	•	compute_cgRMSD.py: Defines functions for CG-RMSD computation.
-	•	merge_and_corr.py: Handles file merging and correlation computations.
-	•	CustomCGRMSD.py: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
+1. main_all.py: Orchestrates CG-RMSD computation, merging, and correlation analysis.
+2. compute_cgRMSD.py: Defines functions for CG-RMSD computation.
+3. merge_and_corr.py: Handles file merging and correlation computations.
+4. CustomCGRMSD.py: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
 
-Output Directories:
-	•	CG-RMSD: Contains CG-RMSD results.
-	•	MERGED: Contains merged results with metrics.
-	•	Correlation_Plots: Stores scatter plots.
+## Output Directories:
+- CG-RMSD: Contains CG-RMSD results.
+- MERGED: Contains merged results with metrics.
+- Correlation_Plots: Stores scatter plots.
 
 
 ### License
