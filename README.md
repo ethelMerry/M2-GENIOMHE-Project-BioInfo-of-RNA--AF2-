@@ -33,7 +33,7 @@ The goal of the project is to compute a custom coarse-grained RMSD and to compar
   - [Step 2: Merge CG-RMSD and scores](#step-2-merge-cg-rmsd-and-scores)
   - [Step 3: Compute Correlations and Visualizations](#step-3-compute-correlations-and-visualizations)
 - [Output Directories](#output-directories)
-- [Result Correlation Analysis](#correation-analysis-of-cfive-data)
+- [Correlation Analysis of C5' Data](#correlation-analysis-of-c5-data)
   
 ---
 
