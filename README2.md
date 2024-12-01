@@ -139,11 +139,11 @@ https://github.com/clementbernardd/custom_rmsd_m2_geniomhe/tree/main/data
 
 This script handles the calculation of CG-RMSD for native and predicted RNA structures.  
 It:  
-	-  Parses native and predicted PDB files to extract atomic coordinates.  
-	-  Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.  
-	-  Computes normalized CG-RMSD values for selected atoms or all atoms.  
-	-  Saves results in a `.csv` file.  
-	-  Generates 3D scatter plots visualizing the alignment results.  
+	-    Parses native and predicted PDB files to extract atomic coordinates.  
+	-    Aligns the predicted structures to the native structure using scipy’s Rotation.align_vectors.  
+	-    Computes normalized CG-RMSD values for selected atoms or all atoms.  
+	-    Saves results in a `.csv` file.  
+	-    Generates 3D scatter plots visualizing the alignment results.  
 
 Input:
 
@@ -162,9 +162,9 @@ merge_and_corr.py (merge_metrics_and_cgRMSD function)
 
 This script merges CG-RMSD results with precomputed metrics (RMSD, MCQ, and TM-Score). 
 It:  
-	-  Loads CG-RMSD `.csv` files and metrics `.csv` files.  
-	-  Joins the two datasets on the structure IDs (`e.g., filenames`).  
-	-  Saves the merged results as a new `.csv` file for further analysis.  
+	-   Loads CG-RMSD `.csv` files and metrics `.csv` files.  
+	-   Joins the two datasets on the structure IDs (`e.g., filenames`).  
+	-   Saves the merged results as a new `.csv` file for further analysis.  
 
 Input:
 
