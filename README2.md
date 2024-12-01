@@ -17,7 +17,7 @@ This repository contains Python scripts and resources for calculating coarse-gra
 
 - [Overview](#overview)
 - [Features](#Features)
-- [Quality of the code](#Quality of the code)
+- [Quality of the code](#quallity-of-the-code)
 - [Dataset](#Dataset)
 - [Requirements](#Requirements)
 - [Installation](#Installation)
@@ -44,13 +44,14 @@ This project automates the process of evaluating predicted molecular structures 
 
 ## Features 
 
-	•	Custom CG-RMSD Calculation: Includes a class-based implementation for modularity.
-	•	Correlation Analysis: Computes Spearman and Pearson correlations between CG-RMSD and RMSD, MCQ, TM-Score.
-	•	Visualization: Generates scatter plots of CG-RMSD vs. other metrics.
-	•	Documentation: Detailed explanations of code structure and usage in this README.
+- **Custom CG-RMSD Calculation**: Includes a class-based implementation for modularity.
+- **Correlation Analysis**: Computes Spearman and Pearson correlations between CG-RMSD and RMSD, MCQ, TM-Score.
+- **Visualization**: Generates scatter plots of CG-RMSD vs. other metrics.
+- **Documentation**: Detailed explanations of code structure and usage in this README.
 
 
-## Quality of the code
+
+## quality-of-the-code
 
 ### documentation
 ### 1. **Code Readability**
