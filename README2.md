@@ -201,10 +201,10 @@ python main_all.py
 
 Follow the prompt : 
 
-	1.	Provide the paths to native and predicted PDB files.
-	2.	Specify atom types to include (e.g., C5, P, or all).
-	3.	Merge the CG-RMSD results with precomputed scores.
-	4.	Generate and save correlation results and visualizations.
+`1.Provide the paths to native and predicted PDB files.  
+2.Specify atom types to include (e.g., C5, P, or all).  
+3.Merge the CG-RMSD results with precomputed scores.  
+4.Generate and save correlation results and visualizations.`
 
 Example Output:
 
@@ -216,7 +216,7 @@ Example Output:
 
 ## Project Structure
 
-1. main_all.py: Orchestrates CG-RMSD computation, merging, and correlation analysis.
+1. main_all.py: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
 2. compute_cgRMSD.py: Defines functions for CG-RMSD computation.
 3. merge_and_corr.py: Handles file merging and correlation computations.
 4. CustomCGRMSD.py: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
