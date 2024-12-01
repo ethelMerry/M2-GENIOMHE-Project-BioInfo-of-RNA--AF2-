@@ -148,6 +148,13 @@ Follow the prompt :
 
 4.  Generate and save correlation results and visualizations.
 
+## Project Structure
+
+1. `main_all.py`: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
+2. `predict_cgRMSD.py`: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
+3. `compute_cgRMSD.py`: Defines functions for CG-RMSD computation.
+4. `merge_and_corr.py`: Handles file merging and correlation computations.
+
 
 ### Step 1: Compute CG-RMSD
 
@@ -247,19 +254,6 @@ Input:
 Output:
 
 •	Print CG-RMSD value in the terminal console.
-
-
-
-
-
-
-## Project Structure
-
-1. `main_all.py`: Orchestrates CG-RMSD computation, merging, and correlation analysis for all files.
-2. `predict_cgRMSD.py`: Implements a customizable class for CG-RMSD computation for one native and one predicted pdb file.
-3. `compute_cgRMSD.py`: Defines functions for CG-RMSD computation.
-4. `merge_and_corr.py`: Handles file merging and correlation computations.
-
 
 ## Output Directories
 - **CG-RMSD**: Contains CG-RMSD results.
