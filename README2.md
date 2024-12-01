@@ -22,13 +22,13 @@ This repository contains Python scripts and resources for calculating coarse-gra
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Usage](#Usage)
-  - [Step 1: Compute CG-RMSDpts](#Step 1: Compute CG-RMSD)
-  - [Step 2: Merge CG-RMSD and Metrics](#Step 2: Merge CG-RMSD and Metrics)
-  - [Step 3: Compute Correlations and Visualizations](#Step 3: Compute Correlations and Visualizations)
-- [Project Structure](#Project Structure)
-- [Example Outputs](#Example Outputs)
-- [Contributing](#Contributing)
-- [Project Structure](#Project Structure)
+  - [Step 1: Compute CG-RMSDpts](#step-1:-compute-cg-rmsd)
+  - [Step 2: Merge CG-RMSD and Metrics](#step-2:-merge-cg-rmsd-and-metrics)
+  - [Step 3: Compute Correlations and Visualizations](#step-3:-compute-correlations-and-visualizations)
+- [Project Structure](#project-structure)
+- [Example Outputs](#example-outputs)
+- [Contributing](#contributing)
+- [Project Structure](#project-structure)
 
 
 ---
@@ -159,7 +159,7 @@ Output:
 	•	A merged .csv file combining CG-RMSD and metrics (e.g., merged_rp05.csv).
 
 
-### Step 3: Compute Correlations and Visualizations
+###Step 3: Compute Correlations and Visualizations
 
 compute_corr.py
 
